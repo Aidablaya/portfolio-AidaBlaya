@@ -1,5 +1,8 @@
+@import '../core/mixins.scss';
+@import '../core/variables.scss';
+
 .img {
-    width: 30%;
+    width: 50%;
 }
 
 /* Works.scss */
@@ -18,36 +21,118 @@
     animation: rotate360 5s linear infinite;
   }
   .motherBox {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    grid-column-gap: 0px;
-    grid-row-gap: 0px;
-    font-family:  'Victor Mono', monospace;
+    display: flex;
+    flex-direction: column;
+    //justify-content: center;
+    align-items: center;
+    //margin: auto;
     &__principal {
-        grid-area: 1 / 1 / 6 / 3;
+      display: block;
     }
     &__mywork {
-        grid-area: 1 / 3 / 2 / 6;
+        display: block;
     }
     &__equipwork {
-        grid-area: 2 / 3 / 3 / 6
+        display: block;
     }
+    @include tablet {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      grid-template-rows: repeat(2, 1fr);
+      grid-column-gap: 0px;
+      grid-row-gap: 0px;
+      font-family:  'Victor Mono', monospace;
+      &__principal {
+          grid-area: 1 / 1 / 6 / 3;
+      }
+      &__mywork {
+          grid-area: 1 / 3 / 2 / 6;
+      }
+      &__equipwork {
+          grid-area: 2 / 3 / 3 / 6
+      }
+    }
+    
   }
 
-  .boxprincipal {
-    background-color: black;
-    color: white;
-    height: 100%;
+.boxprincipal {
+  background-color: black;
+  color: white;
+  height: 100%;
+  margin: 10px;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  font-family: $text;
+  &__title {
+      text-align: center;
+      margin: 10px;
+  }
+  &__button {
+    font-family: $text;
     margin: 10px;
-    border-radius: 15px;
+    padding: 5px;
+    border-radius: 35px;
+    background-color: rgb(238, 207, 130);
+  }
+}
+
+.boxmywork {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: $text;
+  margin: 10px;
+  border: 5px solid black;
+  border-radius: 15px;
+  /*&__list {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 15px;
-    &__title {
-        text-align: center;
-
+    &--li {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }*/
+    &__slider {
+      position: relative;
+      //overflow: hidden;
+      width: 150%;
+      max-width: 100px; /* Ajusta este valor según el ancho deseado para el slider */
+    }
+    &__list {
+      // ... estilos existentes ...
+      width: 150%;
+      display: flex;
+      flex-wrap: nowrap;
+      transition: transform 0.3s ease-in-out;
+    }
+    &__list--li {
+      // ... estilos existentes ...
+      flex-shrink: 0;
+      width: 100%;
+    }
+    &__nav {
+      display: flex;
+      justify-content: center;
+      margin-top: 10px;
+    }
+    &__nav--prev,
+    &__nav--next {
+      padding: 5px 10px;
+      margin: 0 5px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      background-color: #f9f9f9;
+      cursor: pointer;
     }
   }
+
+
+
