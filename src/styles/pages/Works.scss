@@ -4,6 +4,9 @@
 .img {
     width: 50%;
 }
+.img__boxmywork {
+  width: 40%;
+}
 
 /* Works.scss */
 
@@ -89,39 +92,38 @@
   margin: 10px;
   border: 5px solid black;
   border-radius: 15px;
-  /*&__list {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    &--li {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-    }*/
-    &__slider {
-      position: relative;
-      //overflow: hidden;
-      width: 150%;
-      max-width: 100px; /* Ajusta este valor según el ancho deseado para el slider */
+    &__title {
+      margin: 10px;
     }
     &__list {
-      // ... estilos existentes ...
-      width: 150%;
+      
+      width: 200%;
       display: flex;
-      flex-wrap: nowrap;
       transition: transform 0.3s ease-in-out;
+      flex-direction: row;
+      
     }
     &__list--li {
-      // ... estilos existentes ...
+      
       flex-shrink: 0;
       width: 100%;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+      font-size: 0.8rem;
+      gap: 10px;
+      &  p {
+        white-space: wrap;
+        max-width: 300px;
+        
+      }
     }
     &__nav {
       display: flex;
       justify-content: center;
-      margin-top: 10px;
+      margin: 10px;
+      
     }
     &__nav--prev,
     &__nav--next {
@@ -131,8 +133,92 @@
       border-radius: 5px;
       background-color: #f9f9f9;
       cursor: pointer;
+      font-family: $text;
     }
   }
 
 
 
+.hide-project {
+  display: none;
+}
+  
+.equipwork {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: $text;
+  margin: 10px;
+  border: 5px solid black;
+  border-radius: 15px;
+  &__title {
+    margin: 10px;
+  }
+  &__list {
+    width: 200%;
+    display: flex;
+    transition: transform 0.3s ease-in-out;
+    flex-direction: row;
+    &--li {
+      flex-shrink: 0;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+      font-size: 0.8rem;
+      gap: 10px;
+      &  p {
+        white-space: wrap;
+        max-width: 300px;
+        
+      }
+    }
+  }
+  
+}
+.hide-project {
+  display: none;
+}
+
+
+.boxFooter {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  &__link {
+    background-color: rgba(255, 255, 0, 0.5);
+    margin-top: 20px;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+    &--li {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #ccc;
+      width: 20vw;
+      height: 60px;
+      border-radius: 100px;
+      &:hover {
+        background-color: white;
+      }
+      & img {
+        width: 10%;
+        
+      }
+    }
+
+  }
+  &__footer {
+    margin-top: 20px;
+    background-color: black;
+    width: 100%;
+    height: 100px;
+  }
+}

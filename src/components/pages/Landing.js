@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from "react-router-dom";
+import '../../styles/pages/Landing.scss';
 
 
 function Works() {
@@ -14,6 +15,9 @@ function Works() {
           <ul className='buttonContainer'>
             <Link className='buttonContainer__button' to="/works">
               <li>works</li>
+            </Link>
+            <Link className='buttonContainer__button' to="/works">
+              <li>contact</li>
             </Link>
             
           </ul>

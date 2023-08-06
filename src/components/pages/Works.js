@@ -1,28 +1,38 @@
 import React, { useState } from 'react';
+import { Link } from "react-router-dom";
 import videoGame from '../../images/gamegif.gif'; 
 import '../../styles/pages/Works.scss';
 import proyectoCss from '../../images/proyectoCssGif.gif';
 import proyectoJS from '../../images/proyectoJSGif.gif';
+import proyectoReact from '../../images/proyectoRyMGif.gif';
+import proyectoE1 from '../../images/proyectoE1Gif.gif';
+import proyectoE3 from '../../images/proyectoE3Gif.gif';
+import proyectBob from '../../images/proyectoBobGif.gif';
+import iconRow from '../../images/icono-flecha.svg';
 
 function Works() {
-
-  //const [sliderPosition, setSliderPosition] = useState(0);
   const [currentSlide, setCurrentSlide] = useState(0);
+  const [currentSlideEquipWork, setCurrentSlideEquipWork] = useState(0);
 
   const handleNext = () => {
-    const totalSlides = 2; // Cantidad total de slides
-    setCurrentSlide((prevSlide) => (prevSlide + 1) % totalSlides);
+    setCurrentSlide((prevSlide) => prevSlide + 1);
   };
 
-  // Calcula el índice del slide anterior
   const handlePrev = () => {
-    const totalSlides = 2; // Cantidad total de slides
-    setCurrentSlide((prevSlide) => (prevSlide - 1 + totalSlides) % totalSlides);
+    setCurrentSlide((prevSlide) => prevSlide - 1);
+  };
+  const handleNextEquipWork = () => {
+    setCurrentSlideEquipWork((prevSlide) => prevSlide + 1);
+  };
+
+  const handlePrevEquipWork = () => {
+    setCurrentSlideEquipWork((prevSlide) => prevSlide - 1);
   };
   
   const handleClickLinkGame = () => {
     window.location.href = 'https://aidablaya.github.io/trabajo-final-individual-game/';
   }
+
   return (
     <div>
       <main className='motherBox'>
@@ -37,40 +47,66 @@ function Works() {
 
         <section className='motherBox__mywork'>
           <div className='boxmywork'>
-            <h2>Trabajos anteriores 📚</h2>
-            <ul className='boxmywork__list' style={{ transform: `translateX(-${currentSlide * 100}%)` }}>
-              <li className='boxmywork__list--li'>
-                <img className='img' src={proyectoCss} alt="" />
+            <h2 className='boxmywork__title'>Trabajos anteriores 📚</h2>
+            <ul className='boxmywork__list'>
+              <li className={`boxmywork__list--li ${currentSlide !== 0 ? 'hide-project' : ''}`}>
+                <img className='img__boxmywork' src={proyectoCss} alt="" />
                 <p>Maquetación: CSS <a href="http://beta.adalab.es/modulo-1-evaluacion-final-Aidablaya/">Link</a> </p>
               </li>
-              <li className='boxmywork__list--li'>
-                <img className='img' src={proyectoJS} alt="" />
+              
+              <li className={`boxmywork__list--li ${currentSlide !== 1 ? 'hide-project' : ''}`}>
+                <img className='img__boxmywork' src={proyectoJS} alt="" />
+                <p>Javascript, localstorage y obtención de datos de una API <a href="http://beta.adalab.es/modulo-2-evaluacion-final-Aidablaya-1/">Link</a></p>
+              </li>
+
+              <li className={`boxmywork__list--li ${currentSlide !== 2 ? 'hide-project' : ''}`}>
+                <img className='img__boxmywork' src={proyectoReact} alt="" />
                 <p>Javascript, localstorage y obtención de datos de una API <a href="http://beta.adalab.es/modulo-2-evaluacion-final-Aidablaya-1/">Link</a></p>
               </li>
             </ul>
             <div className='boxmywork__nav'>
-                <button className='boxmywork__nav--prev' onClick={handlePrev}>Anterior</button>
-                <button className='boxmywork__nav--next' onClick={handleNext}>Siguiente</button>
-              </div>
+              <button className='boxmywork__nav--prev' onClick={handlePrev} disabled={currentSlide === 0}>Anterior</button>
+              <button className='boxmywork__nav--next' onClick={handleNext} disabled={currentSlide === 2}>Siguiente</button>
+            </div>
           </div>
         </section>
 
-        <section className='motherBox__equipwork'>
-          <h2>Trabajos en equipo 🤘</h2>
-          <ul>
-            <li>
-              <img className='img' src='' alt="" />
-              <p>Maquetación: CSS</p>
-            </li>
-            <li>
-              <img className='img' src='' alt="" />
-              <p>Maquetación: CSS</p>
-            </li>
-          </ul>
+         <section className='motherBox__equipwork'>
+          <div className='equipwork'>
+            <h2 className='equipwork__title'>Trabajos en equipo 🤘</h2>
+            <ul className='equipwork__list'>
+              <li className={`equipwork__list--li ${currentSlideEquipWork !== 0 ? 'hide-project' : ''}`}>
+                <img className='img__boxmywork' src={proyectoE1} alt="" />
+                <p>Maquetación: CSS <a href="http://beta.adalab.es/modulo-1-evaluacion-final-Aidablaya/">Link</a> </p>
+              </li>
+
+              <li className={`equipwork__list--li ${currentSlideEquipWork !== 1 ? 'hide-project' : ''}`}>
+                <img className='img__boxmywork' src={proyectoE3} alt="" />
+                <p>Maquetación: CSS <a href="http://beta.adalab.es/modulo-1-evaluacion-final-Aidablaya/">Link</a> </p>
+              </li>
+
+              <li className={`equipwork__list--li ${currentSlideEquipWork !== 2 ? 'hide-project' : ''}`}>
+                <img className='img__boxmywork' src={proyectBob} alt="" />
+                <p>Maquetación: CSS <a href="http://beta.adalab.es/modulo-1-evaluacion-final-Aidablaya/">Link</a> </p>
+              </li>
+
+            </ul>
+            <div className='boxmywork__nav'>
+            <button className='boxmywork__nav--prev' onClick={handlePrevEquipWork} disabled={currentSlideEquipWork === 0}>Anterior</button>
+              <button className='boxmywork__nav--next' onClick={handleNextEquipWork} disabled={currentSlideEquipWork === 2}>Siguiente</button>
+            </div>
+          </div>
         </section>
       </main>
-      
-      </div>
+      <footer className='boxFooter'>
+            <Link className='boxFooter__link' to="/">
+              <li className='boxFooter__link--li'> <img  src={iconRow} alt="" />🌩️</li>
+            </Link>
+            <div className='boxFooter__footer'>
+              <p>:)</p>
+            </div>
+      </footer>
+    </div>
   );
 }
 
