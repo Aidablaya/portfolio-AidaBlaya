@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "./static/css/main.30662701.css",
+    "main.js": "./static/js/main.c2bb06b6.js",
+    "static/media/proyectoRyMGif.gif": "./static/media/proyectoRyMGif.ebb9bf23c4646fb381aa.gif",
+    "static/media/proyectoJSGif.gif": "./static/media/proyectoJSGif.464196d10b6dc5b45b50.gif",
+    "static/media/proyectoE1Gif.gif": "./static/media/proyectoE1Gif.132d4bbda5ef46bf17c3.gif",
+    "static/media/proyectoE3Gif.gif": "./static/media/proyectoE3Gif.5a866ffffd7456d6d9b1.gif",
+    "static/media/gamegif.gif": "./static/media/gamegif.ef5613039fc11008d7ab.gif",
+    "static/media/proyectoCssGif.gif": "./static/media/proyectoCssGif.c565cd6f5ef7dd9f39dd.gif",
+    "static/media/proyectoBobGif.gif": "./static/media/proyectoBobGif.0d04eb5bf96d63cc2c1d.gif",
+    "index.html": "./index.html",
+    "static/media/icono-flecha.svg": "./static/media/icono-flecha.cb5a3b07d6c30bbcc6d28464617fee80.svg",
+    "main.30662701.css.map": "./static/css/main.30662701.css.map",
+    "main.c2bb06b6.js.map": "./static/js/main.c2bb06b6.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.30662701.css",
+    "static/js/main.c2bb06b6.js"
+  ]
+}
