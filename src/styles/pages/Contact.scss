@@ -1,0 +1,79 @@
+@import '../core/mixins.scss';
+.boxContact {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    &__header {
+        background-color: black;
+        width: 50vw;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        &--title {
+            font-size: 10rem;
+            @include tablet {
+                font-size: 25rem;
+            }
+            
+            
+        }
+    }
+    &__main {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-family:  'Victor Mono', monospace;
+        &--box {
+            //background-color: aqua;
+            width: 50vw;
+            height: 80vh;
+            margin-left: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            //padding-left: 20px;
+            border-left: 2px solid rgb(0, 0, 0);
+        
+        }
+        &--boxTwo {
+            border-left: 15px solid  rgb(235, 208, 142);
+            padding: 20px;
+            & ul {
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+                
+            }
+            & .title{
+                margin-bottom: 30px;
+            }
+        }
+    }
+}
+.icon {
+    font-size: 2.5rem;
+    margin-left: 20px;
+}
+.twitter {
+    display: flex;
+    margin-top: 12px;
+    
+}
+.Link {
+    text-decoration: none;
+    color: inherit;
+}
+.footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: black; /* Puedes personalizar el color de fondo del footer */
+    color: white; /* Puedes personalizar el color del texto del footer */
+    font-family: 'Victor Mono', monospace;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px; 
+}

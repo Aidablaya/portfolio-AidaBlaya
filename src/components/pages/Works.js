@@ -61,7 +61,7 @@ function Works() {
 
               <li className={`boxmywork__list--li ${currentSlide !== 2 ? 'hide-project' : ''}`}>
                 <img className='img__boxmywork' src={proyectoReact} alt="" />
-                <p>Javascript, localstorage y obtención de datos de una API <a href="http://beta.adalab.es/modulo-2-evaluacion-final-Aidablaya-1/">Link</a></p>
+                <p>React (filtros, componenetes y aplicaciónd de rutas), peticiones a una API <a href="http://beta.adalab.es/modulo-3-evaluacion-final-Aidablaya/">Link</a></p>
               </li>
             </ul>
             <div className='boxmywork__nav'>
@@ -77,17 +77,17 @@ function Works() {
             <ul className='equipwork__list'>
               <li className={`equipwork__list--li ${currentSlideEquipWork !== 0 ? 'hide-project' : ''}`}>
                 <img className='img__boxmywork' src={proyectoE1} alt="" />
-                <p>Maquetación: CSS <a href="http://beta.adalab.es/modulo-1-evaluacion-final-Aidablaya/">Link</a> </p>
+                <p>Maquetación: CSS <a href="http://beta.adalab.es/project-promo-t-module-1-team-1//">Link</a> </p>
               </li>
 
               <li className={`equipwork__list--li ${currentSlideEquipWork !== 1 ? 'hide-project' : ''}`}>
                 <img className='img__boxmywork' src={proyectoE3} alt="" />
-                <p>Maquetación: CSS <a href="http://beta.adalab.es/modulo-1-evaluacion-final-Aidablaya/">Link</a> </p>
+                <p>Proyecto React <a href="https://programadoras-junior.onrender.com/">Link</a> </p>
               </li>
 
               <li className={`equipwork__list--li ${currentSlideEquipWork !== 2 ? 'hide-project' : ''}`}>
                 <img className='img__boxmywork' src={proyectBob} alt="" />
-                <p>Maquetación: CSS <a href="http://beta.adalab.es/modulo-1-evaluacion-final-Aidablaya/">Link</a> </p>
+                <p>Proyecto JavaScript <a href="http://beta.adalab.es/project-promo-t-module-2-team-1/">Link</a> </p>
               </li>
 
             </ul>

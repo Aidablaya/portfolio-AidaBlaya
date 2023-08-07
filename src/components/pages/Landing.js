@@ -16,7 +16,7 @@ function Works() {
             <Link className='buttonContainer__button' to="/works">
               <li>works</li>
             </Link>
-            <Link className='buttonContainer__button' to="/works">
+            <Link className='buttonContainer__button' to="/contact">
               <li>contact</li>
             </Link>
             

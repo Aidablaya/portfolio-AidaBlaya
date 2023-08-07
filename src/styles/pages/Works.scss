@@ -2,10 +2,14 @@
 @import '../core/variables.scss';
 
 .img {
-    width: 50%;
+    width: 70%;
+    border-radius: 15px;
+    box-shadow: 2px 2px 8px rgba(248, 248, 248, 0.9);
 }
 .img__boxmywork {
   width: 40%;
+  border-radius: 15px;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.9);
 }
 
 /* Works.scss */
@@ -31,6 +35,7 @@
     //margin: auto;
     &__principal {
       display: block;
+      
     }
     &__mywork {
         display: block;
@@ -61,25 +66,47 @@
 .boxprincipal {
   background-color: black;
   color: white;
-  height: 100%;
+  height: 30vh;
   margin: 10px;
   border-radius: 15px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   gap: 15px;
   font-family: $text;
+  height: 50vh;
+  @include tablet{
+    background-color: black;
+    color: white;
+    height: 100%;
+    margin: 10px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 15px;
+    font-family: $text;
+    height: 150vh;
+    }
+  
+  
   &__title {
       text-align: center;
       margin: 10px;
+      margin-top: 100px;
   }
   &__button {
     font-family: $text;
     margin: 10px;
-    padding: 5px;
+    padding: 10px;
     border-radius: 35px;
-    background-color: rgb(238, 207, 130);
+    background-color: rgb(235, 208, 142);
+    &:hover {
+      background-color: darken(#3498db, 30%);
+      color: white;
+    }
   }
 }
 
@@ -92,6 +119,7 @@
   margin: 10px;
   border: 5px solid black;
   border-radius: 15px;
+  
     &__title {
       margin: 10px;
     }
@@ -124,6 +152,7 @@
       justify-content: center;
       margin: 10px;
       
+      
     }
     &__nav--prev,
     &__nav--next {
@@ -134,6 +163,11 @@
       background-color: #f9f9f9;
       cursor: pointer;
       font-family: $text;
+      background-color: rgb(235, 208, 142);
+      &:hover {
+        background-color: darken(#3498db, 30%);
+        color: white;
+      }
     }
   }
 
@@ -189,7 +223,7 @@
   justify-content: center;
   align-items: center;
   &__link {
-    background-color: rgba(255, 255, 0, 0.5);
+    background-color: rgb(235, 208, 142);
     margin-top: 20px;
     text-decoration: none;
     display: flex;
