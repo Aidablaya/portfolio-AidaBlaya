@@ -1,9 +1,9 @@
 import React from 'react';
 import { Route, Routes} from 'react-router-dom';
 import '../styles/App.scss'
-import Works from './pages/Works';
-import Landing from './pages/Landing';
-import Contact from './pages/Contact';
+import Works from '../pages/Works';
+import Landing from '../pages/Landing';
+import Contact from '../pages/Contact';
 
 function App() {
   return (

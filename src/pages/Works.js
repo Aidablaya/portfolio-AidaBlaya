@@ -1,14 +1,14 @@
 import React, { useState } from 'react';
 import { Link } from "react-router-dom";
-import videoGame from '../../images/gamegif.gif'; 
-import '../../styles/pages/Works.scss';
-import proyectoCss from '../../images/proyectoCssGif.gif';
-import proyectoJS from '../../images/proyectoJSGif.gif';
-import proyectoReact from '../../images/proyectoRyMGif.gif';
-import proyectoE1 from '../../images/proyectoE1Gif.gif';
-import proyectoE3 from '../../images/proyectoE3Gif.gif';
-import proyectBob from '../../images/proyectoBobGif.gif';
-import iconRow from '../../images/icono-flecha.svg';
+import videoGame from '../images/gamegif.gif'; 
+import '../styles/pages/Works.scss';
+import proyectoCss from '../images/proyectoCssGif.gif';
+import proyectoJS from '../images/proyectoJSGif.gif';
+import proyectoReact from '../images/proyectoRyMGif.gif';
+import proyectoE1 from '../images/proyectoE1Gif.gif';
+import proyectoE3 from '../images/proyectoE3Gif.gif';
+import proyectBob from '../images/proyectoBobGif.gif';
+import iconRow from '../images/icono-flecha.svg';
 
 function Works() {
   const [currentSlide, setCurrentSlide] = useState(0);

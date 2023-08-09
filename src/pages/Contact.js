@@ -1,8 +1,8 @@
-import '../../styles/pages/Contact.scss';
+import '../styles/pages/Contact.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLinkedin, faGithub, faTwitter, faXTwitter } from '@fortawesome/free-brands-svg-icons';
 import { Link } from "react-router-dom";
-import iconRow from '../../images/icono-flecha.svg';
+import iconRow from '../images/icono-flecha.svg';
 
 function Contact() {
     return(
