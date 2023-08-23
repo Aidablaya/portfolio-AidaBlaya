@@ -1,6 +1,6 @@
 {
   "name": "react-starter-kit",
-  "homepage": "https://aidablaya.github.io/portfolio-AidaBlaya/",
+  "homepage": "./",
   "version": "0.1.0",
   "private": false,
   "dependencies": {
