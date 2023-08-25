@@ -103,6 +103,7 @@
     padding: 10px;
     border-radius: 35px;
     background-color: rgb(235, 208, 142);
+    cursor: pointer;
     &:hover {
       background-color: darken(#3498db, 30%);
       color: white;
