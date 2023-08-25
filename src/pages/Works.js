@@ -29,9 +29,7 @@ function Works() {
     setCurrentSlideEquipWork((prevSlide) => prevSlide - 1);
   };
   
-  const handleClickLinkGame = () => {
-    window.location.href = 'https://aidablaya.github.io/trabajo-final-individual-game/';
-  }
+  
 
   return (
     <div>
@@ -41,7 +39,7 @@ function Works() {
             <h2 className='boxprincipal__title'>Trabajo en curso <span className="rotating-icon">⏳</span></h2>
             <img className='img' src={videoGame} alt="" />
             <p>Rainbow Pot: Juego en proceso </p>
-            <button onClick={handleClickLinkGame} className='boxprincipal__button'>Te dejo el link 👀</button>
+            <button  className='boxprincipal__button'>Te dejo el <a href='https://aidablaya.github.io/trabajo-final-individual-game/'>link</a> 👀</button>
           </div>
         </section>
 
