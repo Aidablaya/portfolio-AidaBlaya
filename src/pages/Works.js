@@ -30,7 +30,7 @@ function Works() {
   };
   
   const handleClickLinkGame = () => {
-    window.location.href = 'https://aidablaya.github.io/trabajo-final-individual-game/';
+    window.open('https://aidablaya.github.io/trabajo-final-individual-game/');
   }
 
   return (
