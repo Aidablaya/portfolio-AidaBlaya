@@ -10,6 +10,7 @@
   width: 40%;
   border-radius: 15px;
   box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.9);
+  
 }
 
 /* Works.scss */
@@ -66,7 +67,7 @@
 .boxprincipal {
   background-color: black;
   color: white;
-  height: 30vh;
+  text-align: center;
   margin: 10px;
   border-radius: 15px;
   display: flex;
@@ -75,7 +76,7 @@
   align-items: center;
   gap: 15px;
   font-family: $text;
-  height: 50vh;
+  height: 60vh;
   @include tablet{
     background-color: black;
     color: white;
