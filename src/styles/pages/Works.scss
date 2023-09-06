@@ -7,7 +7,13 @@
     box-shadow: 2px 2px 8px rgba(248, 248, 248, 0.9);
 }
 .img__boxmywork {
-  width: 40%;
+  width: 80%;
+  border-radius: 15px;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.9);
+  
+}
+.img__equipwork {
+  width: 80%;
   border-radius: 15px;
   box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.9);
   
@@ -127,7 +133,7 @@
     }
     &__list {
       
-      width: 200%;
+      width: 100%;
       display: flex;
       transition: transform 0.3s ease-in-out;
       flex-direction: row;
@@ -192,7 +198,7 @@
     margin: 10px;
   }
   &__list {
-    width: 200%;
+    width: 100%;
     display: flex;
     transition: transform 0.3s ease-in-out;
     flex-direction: row;

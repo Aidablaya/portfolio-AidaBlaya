@@ -3,8 +3,13 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLinkedin, faGithub, faTwitter, faXTwitter } from '@fortawesome/free-brands-svg-icons';
 import { Link } from "react-router-dom";
 import iconRow from '../images/icono-flecha.svg';
+import cvPdf from '../images/cvPdf.pdf';
 
 function Contact() {
+    
+        const openCvPdf = () => {
+            window.open(cvPdf, '_blank');
+        };
     return(
         <div>
         <div className='boxContact'>
@@ -12,6 +17,9 @@ function Contact() {
                 <p className='boxContact__header--title'>🌩️</p>
             </header>
             <main className='boxContact__main'>
+                <div className='boxContact__main--buttonCv'>
+                    <button onClick={openCvPdf} className='buttonCv'>Mi Cv</button>
+                </div>
                 <div className='boxContact__main--box'>
                     <div className='boxContact__main--boxTwo'>
                         <h1 className='title'>Aida Blaya Balaguer</h1>

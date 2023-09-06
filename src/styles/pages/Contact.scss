@@ -18,16 +18,40 @@
             
         }
     }
+    .buttonCv {
+        margin: 20px;
+        width: 160px;
+        height: 60px;
+        background-color: black;
+        color: white;
+        font-size: 2rem;
+        font-family:  'Victor Mono', monospace;
+        border-radius: 30px;
+        font-weight: bold;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+        cursor: pointer;
+        border: 0;
+        &:hover {
+            cursor: pointer;
+            background-color: rgb(235, 208, 142);
+        }
+    }
     &__main {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         font-family:  'Victor Mono', monospace;
+        &--buttonCv {
+            padding: 20px;
+            
+            
+            
+        }
         &--box {
             //background-color: aqua;
             width: 50vw;
-            height: 80vh;
+            //height: 80vh;
             margin-left: 20px;
             display: flex;
             flex-direction: column;
