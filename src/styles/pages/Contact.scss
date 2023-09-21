@@ -1,14 +1,21 @@
 @import '../core/mixins.scss';
 .boxContact {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     width: 100%;
+    @include tablet {
+        flex-direction: row;
+    }
     &__header {
         background-color: black;
-        width: 50vw;
-        height: 100vh;
+        width: 100vw;
+        height: 30vh;
         display: flex;
         justify-content: center;
+        @include tablet {
+            height: 100vh;
+            width: 50vw;
+        }
         &--title {
             font-size: 10rem;
             @include tablet {
@@ -39,9 +46,16 @@
     &__main {
         display: flex;
         flex-direction: column;
-        justify-content: center;
+        justify-content: flex-start;
         align-items: center;
         font-family:  'Victor Mono', monospace;
+        font-size: 1rem;
+
+        max-height: calc(100vh - 30vh - 80px); /* 80px es la altura de tu footer */
+        overflow-y: auto;
+        @include tablet {
+            overflow: inherit;
+        }
         &--buttonCv {
             padding: 20px;
             

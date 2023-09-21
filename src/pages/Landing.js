@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from "react-router-dom";
 import '../styles/pages/Landing.scss';
+import cloud from "../images/Rayito.png";
 
 
 function Works() {
@@ -8,7 +9,7 @@ function Works() {
     <div className="container">
         <header className='container__header'>
           <h1 className='container__header--title'> ✌️ Hola soy Aida, <br /> Junior Front-end Developer</h1>
-          <p className='container__header--icon'>🌩️</p>
+          <img src={cloud} alt="" className='container__header--img'/>
           <p className='container__header--text'>En mi portfolio podrás encontrar trabajos realizados con <strong>HTML5, JS, React, CSS3, SASS, NodeJS y SQL</strong></p>
         </header>
         <main className='container__main'>
