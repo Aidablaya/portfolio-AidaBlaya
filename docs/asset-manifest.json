@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "./static/css/main.3558e464.css",
-    "main.js": "./static/js/main.004dd8e1.js",
+    "main.css": "./static/css/main.609177fd.css",
+    "main.js": "./static/js/main.3d5d42bf.js",
     "static/media/proyectoRyMGif.gif": "./static/media/proyectoRyMGif.ebb9bf23c4646fb381aa.gif",
     "static/media/proyectoJSGif.gif": "./static/media/proyectoJSGif.464196d10b6dc5b45b50.gif",
     "static/media/proyectoE1Gif.gif": "./static/media/proyectoE1Gif.132d4bbda5ef46bf17c3.gif",
@@ -9,15 +9,17 @@
     "static/media/gamegif.gif": "./static/media/gamegif.ef5613039fc11008d7ab.gif",
     "static/media/proyectoCssGif.gif": "./static/media/proyectoCssGif.c565cd6f5ef7dd9f39dd.gif",
     "static/media/proyectoBobGif.gif": "./static/media/proyectoBobGif.0d04eb5bf96d63cc2c1d.gif",
+    "static/media/pokeRedux.jpg": "./static/media/pokeRedux.437f1151c1f3cee88399.jpg",
     "static/media/Rayito.png": "./static/media/Rayito.20aa562c471d6963dffe.png",
-    "static/media/cvPdf.pdf": "./static/media/cvPdf.8ad166ace80e4761719d.pdf",
+    "static/media/AidaCV2024.pdf": "./static/media/AidaCV2024.a36eaabf4f47aadf30d6.pdf",
+    "static/media/colorRedux.jpg": "./static/media/colorRedux.89e040884ef4acafd139.jpg",
     "index.html": "./index.html",
     "static/media/icono-flecha.svg": "./static/media/icono-flecha.cb5a3b07d6c30bbcc6d28464617fee80.svg",
-    "main.3558e464.css.map": "./static/css/main.3558e464.css.map",
-    "main.004dd8e1.js.map": "./static/js/main.004dd8e1.js.map"
+    "main.609177fd.css.map": "./static/css/main.609177fd.css.map",
+    "main.3d5d42bf.js.map": "./static/js/main.3d5d42bf.js.map"
   },
   "entrypoints": [
-    "static/css/main.3558e464.css",
-    "static/js/main.004dd8e1.js"
+    "static/css/main.609177fd.css",
+    "static/js/main.3d5d42bf.js"
   ]
 }
