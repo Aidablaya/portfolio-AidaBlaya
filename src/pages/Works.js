@@ -9,6 +9,8 @@ import proyectoE1 from '../images/proyectoE1Gif.gif';
 import proyectoE3 from '../images/proyectoE3Gif.gif';
 import proyectBob from '../images/proyectoBobGif.gif';
 import iconRow from '../images/icono-flecha.svg';
+import pokeRedux from '../images/pokeRedux.jpg';
+import colorRedux from '../images/colorRedux.jpg';
 
 function Works() {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -45,9 +47,27 @@ function Works() {
           </div>
         </section>
 
+        
+
         <section className='motherBox__mywork'>
+        
+         <div className='boxIndividual'>
+            <h2 className='boxIndividual__title'>Trabajos individuales</h2>
+            <ul className='boxIndividual__list'>
+              <li className='boxIndividual__list--li'>
+                <img className='imgColorRedux' src={colorRedux} alt="" />
+                <p>Drag&Drop con Redux <a href="https://aidablaya.github.io/colors-redux/">Link</a> </p>
+              </li>
+            
+              <li className='boxIndividual__list--li'>
+                <img className='imgPokeRedux' src={pokeRedux} alt="" />
+                <p>API Pokemons con Redux <a href="https://aidablaya.github.io/pokedx-react-redux/">Link</a> </p>
+              </li>
+            </ul>
+          </div>
+        
           <div className='boxmywork'>
-            <h2 className='boxmywork__title'>Trabajos anteriores 📚</h2>
+            <h2 className='boxmywork__title'>Trabajos realizados en Adalab 📚</h2>
             <ul className='boxmywork__list'>
               <li className={`boxmywork__list--li ${currentSlide !== 0 ? 'hide-project' : ''}`}>
                 <img className='img__boxmywork' src={proyectoCss} alt="" />

@@ -53,9 +53,10 @@
     @include tablet {
       display: grid;
       grid-template-columns: repeat(5, 1fr);
-      grid-template-rows: repeat(2, 1fr);
-      grid-column-gap: 0px;
-      grid-row-gap: 0px;
+      //grid-template-rows: repeat(2, 1fr);
+     // grid-column-gap: 0px;
+      //grid-row-gap: 0px;
+      align-items: start;
       font-family:  'Victor Mono', monospace;
       &__principal {
           grid-area: 1 / 1 / 6 / 3;
@@ -95,14 +96,19 @@
     align-items: center;
     gap: 15px;
     font-family: $text;
-    height: 150vh;
+    height: 294vh;
     }
   
   
   &__title {
       text-align: center;
+      //margin: 10px;
+      margin-top: 2rem;
+      @include tablet {
+        text-align: center;
       margin: 10px;
       margin-top: 100px;
+      }
   }
   &__button {
     font-family: $text;
@@ -264,3 +270,92 @@
     height: 100px;
   }
 }
+
+.boxIndividual{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: $text;
+  margin: 10px;
+  border: 5px solid black;
+  border-radius: 15px;
+  &__title {
+    margin: 10px;
+  }
+  &__list {
+      
+    width: 100%;
+    display: flex;
+    
+    flex-direction: column;
+    &--li {
+      flex-shrink: 0;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+      font-size: 0.8rem;
+      //gap: 10px;
+      &  p {
+        white-space: wrap;
+        max-width: 300px;
+        margin-bottom: 2rem;
+        
+      }
+    }
+  }
+}
+.imgColorRedux {
+  width: 70%;
+}
+.imgPokeRedux {
+  width: 70%;
+  margin-bottom: 2rem;
+}
+/*
+.boxmywork {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: $text;
+  margin: 10px;
+  border: 5px solid black;
+  border-radius: 15px;
+  
+    &__title {
+      margin: 10px;
+    }
+    &__list {
+      
+      width: 100%;
+      display: flex;
+      transition: transform 0.3s ease-in-out;
+      flex-directionflex-shrink: 0;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+      font-size: 0.8rem;
+      gap: 10px;
+      &  p {
+        white-space: wrap;
+        max-width: 300px;
+        
+      }: row;
+      
+    }
+    &__list--li {
+      
+      
+    }
+    &__nav {
+      display: flex;
+      justify-content: center;
+      margin: 10px;
+      
+      
+    }*/

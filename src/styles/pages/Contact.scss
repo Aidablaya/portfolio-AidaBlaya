@@ -9,9 +9,10 @@
     &__header {
         background-color: black;
         width: 100vw;
-        height: 30vh;
+        height: 20vh;
         display: flex;
-        justify-content: center;
+        flex-direction: row;
+        justify-content: flex-end;
         @include tablet {
             height: 100vh;
             width: 50vw;
@@ -26,7 +27,7 @@
         }
     }
     .buttonCv {
-        margin: 20px;
+        //margin: 20px;
         width: 160px;
         height: 60px;
         background-color: black;
@@ -44,26 +45,30 @@
         }
     }
     &__main {
-        display: flex;
+      
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        font-family:  'Victor Mono', monospace;
+        font-size: 0.7rem;
+        gap: 0.5rem;
+        margin-top: 1rem;
+        max-height: calc(100vh - 30vh - 80px); /* 80px es la altura de tu footer */
+       
+        @include tablet {
+            
+            font-size: 1.5rem;
+           
         flex-direction: column;
         justify-content: flex-start;
         align-items: center;
         font-family:  'Victor Mono', monospace;
         font-size: 1rem;
-
-        max-height: calc(100vh - 30vh - 80px); /* 80px es la altura de tu footer */
-        overflow-y: auto;
-        @include tablet {
-            overflow: inherit;
-            font-size: 1.5rem;
+        gap: 1rem;
+        margin-top: 3rem;
+        
         }
-        &--buttonCv {
-            padding: 20px;
-            
-            
-            
-            
-        }
+        
         &--box {
             
             //background-color: aqua;
